@@ -286,6 +286,10 @@ class ClientBase implements Runnable {
       }
     }
   }
+  
+  public boolean isConnectionEstablished() {
+    return connectionEstablished.get();
+  }
 
   public void reconnect() {
     if (connectionEstablished.get()) {

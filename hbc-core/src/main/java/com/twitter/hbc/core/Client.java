@@ -43,6 +43,8 @@ public interface Client {
    * @param waitMillis milliseconds to wait for the client to stop
    */
   public void stop(int waitMillis);
+  
+  public boolean isConnectionEstablished();
 
   public boolean isDone();
 

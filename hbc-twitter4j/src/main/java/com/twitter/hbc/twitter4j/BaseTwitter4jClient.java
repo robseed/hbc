@@ -103,6 +103,10 @@ class BaseTwitter4jClient implements Twitter4jClient {
     executorService.shutdown();
   }
 
+  public boolean isConnectionEstablished() {
+    return client.isConnectionEstablished();
+  }
+  
   @Override
   public boolean isDone() {
     return client.isDone();

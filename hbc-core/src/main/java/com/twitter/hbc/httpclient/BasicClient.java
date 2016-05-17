@@ -147,4 +147,9 @@ public class BasicClient implements Client {
   boolean waitForFinish(int millis) throws InterruptedException {
     return clientBase.waitForFinish(millis);
   }
+
+  @Override
+  public boolean isConnectionEstablished() {
+    return clientBase.isConnectionEstablished();
+  }
 }
